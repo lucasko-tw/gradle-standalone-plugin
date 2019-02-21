@@ -76,9 +76,20 @@ apply plugin: org.lucasko.MyPlugin
 
 ```
 
+
+Build & Publish
+
+```sh
+cd gradle-standalone-plugin/my-plugin
+
+./gradlew build publishToMavenLocal
+```
+
+
 Run Tasks
 
 ```sh
+
 cd gradle-standalone-plugin/my-project
 
 $ ./gradlew hello
