@@ -15,5 +15,13 @@ class MyPlugin implements Plugin<Project> {
                     recipient = "lucas";
                 };
 
+
+
+        project.getTasks().create("runCommand", ExecTask.class)
+                {
+                    description= "Run Commands"
+                    group= "Lucas"
+                };
+
     }
 }
